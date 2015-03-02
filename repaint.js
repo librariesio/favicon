@@ -5,8 +5,10 @@ var Canvas  = require('canvas');
 var colours = require('./colours.json');
 var fs      = require('fs');
 
+var HEXREGEXP = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i
+
 function hexToRgb(hex) {
-  var match = hex.match(/^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i);
+  var match = hex.match(HEXREGEXP);
   if (!match) return null;
   var rgb = {
     r: parseInt(match[1], 16),
@@ -17,8 +19,9 @@ function hexToRgb(hex) {
 }
 
 var repaint = function(req, res) {
+  var hex  = req.query.hex;
   var lang = req.query.lang;
-  var colour = colours[lang];
+  var colour = hex && hex.match(HEXREGEXP) ? hex : colours[lang];
 
   if (!colour) return res.end();
 
