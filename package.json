@@ -10,7 +10,7 @@
   "author": "Mauro Pompilio",
   "license": "MIT",
   "dependencies": {
-    "canvas": "^1.2.1",
+    "canvas": "1.1.6",
     "express": "^4.12.1"
   }
 }
