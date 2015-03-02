@@ -20,6 +20,8 @@ var repaint = function(req, res) {
   var lang = req.query.lang;
   var colour = colours[lang];
 
+  if (!colour) return res.end();
+
   fs.readFile(__dirname + '/favicon-16x16.png', function(err, data) {
     if (err) throw err;
 
