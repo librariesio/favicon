@@ -1,0 +1,16 @@
+{
+  "name": "faviconz",
+  "version": "1.0.0",
+  "description": "Generate colourful favicons!",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha"
+  },
+  "author": "Mauro Pompilio",
+  "license": "MIT",
+  "dependencies": {
+    "canvas": "^1.2.1",
+    "express": "^4.12.1"
+  }
+}
