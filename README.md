@@ -1,16 +1,28 @@
-# Faviconz
+# Libraries.io Favicons
 
   Generate favicons that follow the GitHub language colour code.
 
 ## Usage
 
- -  `http://localhost:5000/favicon.ico?lang=Ruby`
+ Available query parameters are:
 
-## Installation
+ - `size`: 16, 32, 96, 128 or 196
+ - `hex`: hex colour code, eg: #252525
+ - `lang`: a valid languange, check `lib/colours.json`
+
+ Example:
+
+ - `http://localhost:5000/favicon.ico?size=128&lang=Ruby`
+
+## Dependencies
 
  - `brew install cairo`
  - `export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/opt/X11/lib/pkgconfig`
  - `npm install`
+
+## Running it
+
+  `npm start`
 
 ## Deployment to Heroku
 
