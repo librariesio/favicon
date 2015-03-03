@@ -11,6 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "canvas": "1.1.6",
-    "express": "^4.12.1"
+    "express": "^4.12.1",
+    "uuid": "^2.0.1"
   }
 }
