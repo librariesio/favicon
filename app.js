@@ -1,8 +1,8 @@
 /*jshint globalstrict:true, trailing:false, unused:true, node:true */
 "use strict";
 
-var favicon = require('./favicon');
-var repaint = require('./repaint');
+var favicon = require('./lib/favicon');
+var repaint = require('./lib/repaint');
 
 var express = require('express');
 var app     = express();
