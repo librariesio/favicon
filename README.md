@@ -8,7 +8,7 @@
 
  - `size`: 16, 32, 96, 128 or 196
  - `hex`: hex colour code, eg: #252525
- - `lang`: a valid languange, check `lib/colours.json`
+ - `lang`: a valid language, check `lib/colours.json`
 
  Example:
 
@@ -26,5 +26,5 @@
 
 ## Deployment to Heroku
 
-  Deploymento to Heroku requires using `heroku-buildpack-multi` and the buildpacks specified in `.buildpack` and it only works with `node-canvas` `1.1.6` (on `1.2.1` there's an issue with `pangocairo`): https://github.com/Automattic/node-canvas/wiki/Installation-on-Heroku#using-a-custom-build-pack
+  Deployment to Heroku requires using `heroku-buildpack-multi` and the buildpacks specified in `.buildpack` and it only works with `node-canvas` `1.1.6` (on `1.2.1` there's an issue with `pangocairo`): https://github.com/Automattic/node-canvas/wiki/Installation-on-Heroku#using-a-custom-build-pack
   
