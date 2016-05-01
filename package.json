@@ -4,8 +4,7 @@
   "description": "Generate colourful favicons!",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "test": "mocha"
+    "start": "node app.js"
   },
   "author": "Mauro Pompilio",
   "license": "MIT",
