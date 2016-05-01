@@ -9,8 +9,8 @@
   "author": "Mauro Pompilio",
   "license": "MIT",
   "dependencies": {
-    "canvas": "^1.3.4",
-    "express": "^4.12.1",
-    "uuid": "^2.0.1"
+    "canvas": "^1.3.13",
+    "express": "^4.13.4",
+    "uuid": "^2.0.2"
   }
 }
